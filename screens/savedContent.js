@@ -4,13 +4,14 @@ import {View,Text,StyleSheet} from 'react-native'
 import PostList from "../components/screens/Home/postList"
 import {getSavedPosts} from "../api/content"
 import {UserContext} from "../store/user_context"
+import {useIsFocused} from "@react-navigation/native"
 
 
 export default function SavedContents(){
 
     const [postData,setPostData] = useState([])
     const {userData} = useContext(UserContext)
-    
+    const isFocused = useIsFocused()
 
     useEffect(()=>{
 
@@ -21,7 +22,7 @@ export default function SavedContents(){
 
         getSavedPostHandler()
 
-    },[])
+    },[isFocused])
 
     
 

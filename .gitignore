@@ -1,7 +1,6 @@
 node_modules/
 util/
 .expo/
-README.md
 assets/
 dist/
 npm-debug.*

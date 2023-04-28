@@ -48,15 +48,15 @@ export default function EditProfile(){
         try {
 
             setIsLoading(true);
-         
-            const manipResult = await manipulateAsync(
-                selectedImgeUrl,
-                [{resize:{width:300}}],
-                { compress: 0.5, format: SaveFormat.PNG}
-            );
 
             if(selectedImgeUrl){
-    
+     
+                const manipResult = await manipulateAsync(
+                    selectedImgeUrl,
+                    [{resize:{width:300}}],
+                    { compress: 0.5, format: SaveFormat.PNG}
+                );
+
                 const imageUri = manipResult.uri
                 const response = await fetch(imageUri);
                 const blob = await response.blob();
@@ -66,7 +66,6 @@ export default function EditProfile(){
                 var downlandUrl = await getDownloadURL(refObject);
             }
 
-        
             const currentNameData = newName ?? userData.fullName
             const currentImageData = selectedImgeUrl ? downlandUrl : userData.profileImage
     

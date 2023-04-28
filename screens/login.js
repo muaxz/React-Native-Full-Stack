@@ -80,7 +80,7 @@ export default function LoginRoot(){
     }
 
     return(
-        <ImageBackground imageStyle={{opacity:0.8,resizeMode:"cover"}} source={require("../assets/lines.jpg")} style={styles.rootView}>
+        <ImageBackground imageStyle={{opacity:0.8,resizeMode:"cover",top:null,height:600}} source={require("../assets/login-background.jpg")} style={styles.rootView}>
             <View>
                 <Text style={styles.title}>Hello</Text>
             </View>

@@ -23,13 +23,13 @@ export default function UserContextRoot({children}){
         async function userStateHandler(){
 
            const idToken = await AsyncStorage.getItem("idToken")
-    
+           
            if(idToken){
             
                const user_id = await AsyncStorage.getItem("userId") 
     
                const {profileImage,fullName,_id} = await getUserProfile(user_id,idToken);
-               
+            
                setUserData({
                  profileImage,
                  fullName,
@@ -41,6 +41,7 @@ export default function UserContextRoot({children}){
                 isFromLogin:true
                })
            }
+           
 
            SplashScreen.hideAsync()
         }
