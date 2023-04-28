@@ -3,7 +3,7 @@ import React, { useState, useContext} from 'react';
 import {View} from 'react-native'
 import TextInput from "../UI/TextInput"
 import {Context} from "../../store/user_input_context"
-//
+
 export default function UserForm({isLoginScreen}){
 
     const {inputChangeHandler,inputValues} = useContext(Context);
