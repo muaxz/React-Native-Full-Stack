@@ -1,6 +1,7 @@
 node_modules/
 util/
 .expo/
+README.md
 assets/
 config.js
 dist/
