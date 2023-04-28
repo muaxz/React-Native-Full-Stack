@@ -1,6 +1,6 @@
 node_modules/
 util/
-ignoredfile.txt
+config.js
 .expo/
 dist/
 npm-debug.*
