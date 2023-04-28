@@ -10,6 +10,7 @@ import {useNavigation} from "@react-navigation/native"
 export const UserContext = createContext();
 
 //SplashScreen.preventAutoHideAsync();
+//finish
 
 export default function UserContextRoot({children}){
 
