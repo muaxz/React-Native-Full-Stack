@@ -3,7 +3,6 @@ util/
 .expo/
 README.md
 assets/
-config.js
 dist/
 npm-debug.*
 *.jks
