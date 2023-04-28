@@ -1,7 +1,7 @@
 node_modules/
 util/
-config.js
 .expo/
+config.js
 dist/
 npm-debug.*
 *.jks
